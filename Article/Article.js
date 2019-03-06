@@ -18,6 +18,8 @@ class Article {
 
   expandArticle() {
     this.domElement.classList.toggle('article-open');
+    this.domElement.classList.toggle('flashy');
+
 
   }
 }
@@ -36,7 +38,3 @@ let articles = document.querySelectorAll('.article');
 articles.forEach(function(article){
   return new Article(article);
 })
-
-
-
-
